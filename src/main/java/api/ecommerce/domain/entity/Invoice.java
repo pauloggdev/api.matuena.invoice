@@ -17,6 +17,7 @@ import lombok.Data;
 
 @Entity
 @Data
+
 public class Invoice implements Signable {
 
     @Id

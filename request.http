@@ -1,0 +1,42 @@
+
+###
+
+POST http://localhost:8080/v1/checkout
+Content-Type: application/json
+Content-Length: 152
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+	"customerId": "CUSTOMER-01",
+	"total": 1000.00,
+	"paymentMethod": "PAYPAL", 
+	"discountType": "VIP", 
+	"productId": "PRODUCT TEST",
+	"qty": 5
+}
+
+
+###
+
+POST http://localhost:8080/api/v1/series
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwYXVsb2dnam9hb0BnbWFpbC5jb20iLCJpYXQiOjE3Nzg0MzQ2MzYsImV4cCI6MTc3ODQzODIzNn0.ZPiUkz6N9Wn5fz9Xl4EL7S87ibzHTO_cR_zokjlGLW8pB8UDPPajiR2fo87mjbDmDVGTQRjtxA13xfREKyXIir3M1O6DlDeqIzdTNN2Sb2iESmMsLVVQZeBQxvoLuv2rMv1va7p5a482UNpzele3rn6RnCZuwSPqZhpNTvKnbSL_3kUPpsKEPHWxVlJMOGtThPnIVl2KaZuvnpRPN_N6aAwj92rKMuK1M6SL2RljSJf4QumLoZpeNFbQlttsiMsQLHD_HcAhlKMcluRJeSLYsflixHLS6wtogQ2FBwOPHXntlzUUgTODgywoK3fEzBoW4ZKCLqdoqJUKnpnmzq1tlA
+
+{
+  "seriesYear": "2026",
+  "documentType": "FT",
+  "establishmentNumber": "SEDE",
+  "seriesContingencyIndicator": "N"
+}
+
+###
+
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+	"email": "pauloggjoao@gmail.com",
+	"password": "12345678"
+}
